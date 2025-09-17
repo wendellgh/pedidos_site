@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Lista de Pedidos - Página 1</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body { font-family: Arial,Helvetica,sans-serif; margin: 28px; }
+    h1 { font-size: 32px; margin-bottom: 4px; }
+    p.meta { color: #666; margin-top:0; }
+    table { border-collapse: collapse; width: 100%; margin-top: 18px; }
+    th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+    th { background: #e6f0e6; }
+    nav.pager { margin-top: 18px; }
+    nav.pager a { margin-right: 8px; text-decoration: none; padding:6px 10px; border:1px solid #ccc; border-radius:4px; color:#333; }
+    nav.pager a.current { background:#cfeadf; font-weight:700; }
+  </style>
+</head>
+<body>
+  <h1>Lista de Pedidos</h1>
+  <p class="meta">Total de Pedidos: 8399 (Exibindo: Página 1 de 168)</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>PedidoID</th>
+        <th>DataPedido</th>
+        <th>ClienteID</th>
+        <th>VendedorID</th>
+        <th>SegmentoID</th>
+        <th>ProdutoID</th>
+        <th>PrecoUnit</th>
+        <th>Quantidade</th>
+        <th>Desconto</th>
+        <th>FreteTipoID</th>
+        <th>FreteCusto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1000</td><td>07 Jan 2015</td><td>100</td><td>B</td><td>HO</td><td>PR0100</td><td>6,28</td><td>2</td><td>1%</td><td>P</td><td>2,58</td></tr>
+      <tr><td>1001</td><td>08 Jan 2015</td><td>101</td><td>C</td><td>CO</td><td>PR0101</td><td>12,56</td><td>4</td><td>4%</td><td>S</td><td>5,16</td></tr>
+      <tr><td>1002</td><td>09 Jan 2015</td><td>102</td><td>D</td><td>PE</td><td>PR0102</td><td>18,84</td><td>6</td><td>7%</td><td>P</td><td>7,74</td></tr>
+      <tr><td>1003</td><td>10 Jan 2015</td><td>103</td><td>E</td><td>GE</td><td>PR0103</td><td>25,12</td><td>8</td><td>0%</td><td>S</td><td>10,32</td></tr>
+      <tr><td>1004</td><td>11 Jan 2015</td><td>104</td><td>F</td><td>EL</td><td>PR0104</td><td>31,40</td><td>10</td><td>3%</td><td>P</td><td>12,90</td></tr>
+      <tr><td>1005</td><td>12 Jan 2015</td><td>105</td><td>G</td><td>HO</td><td>PR0105</td><td>37,68</td><td>12</td><td>6%</td><td>S</td><td>15,48</td></tr>
+      <tr><td>1006</td><td>13 Jan 2015</td><td>106</td><td>H</td><td>CO</td><td>PR0106</td><td>43,96</td><td>14</td><td>9%</td><td>P</td><td>18,06</td></tr>
+      <tr><td>1007</td><td>14 Jan 2015</td><td>107</td><td>I</td><td>PE</td><td>PR0107</td><td>50,24</td><td>16</td><td>2%</td><td>S</td><td>20,64</td></tr>
+      <tr><td>1008</td><td>15 Jan 2015</td><td>108</td><td>J</td><td>GE</td><td>PR0108</td><td>56,52</td><td>18</td><td>5%</td><td>P</td><td>23,22</td></tr>
+      <tr><td>1009</td><td>16 Jan 2015</td><td>109</td><td>A</td><td>EL</td><td>PR0109</td><td>62,80</td><td>20</td><td>8%</td><td>S</td><td>25,80</td></tr>
+    </tbody>
+  </table>
+
+  <nav class="pager" aria-label="Páginas">
+    <!-- links with query param style and folder style -->
+    <a class="current" href="?p=1">?p=1</a> <a class="current" href="./1/">1</a> <a class="" href="?p=2">?p=2</a> <a class="" href="./2/">2</a> <a class="" href="?p=3">?p=3</a> <a class="" href="./3/">3</a> <a class="" href="?p=4">?p=4</a> <a class="" href="./4/">4</a> <a class="" href="?p=5">?p=5</a> <a class="" href="./5/">5</a>
+  </nav>
+
+  <p style="margin-top:28px;color:#555;font-size:13px;">Observação: páginas de exemplo estáticas. Para usar no Power Query, hospede essas pastas em um servidor estático (GitHub Pages ou `python -m http.server`) e aponte o Power Query para a URL da página (ex.: <code>/pedidos/1/</code>).</p>
+</body>
+</html>
